@@ -3,9 +3,9 @@ local wezterm = require("wezterm")
 local config = wezterm.config_builder()
 config.color_scheme = "Gruvbox dark, hard (base16)"
 -- config.color_scheme = "tokyonight_moon"
-config.font = wezterm.font("MonoLisa")
+config.font = wezterm.font("Berkeley Mono")
 -- work
-config.font_size = 12.4
+config.font_size = 14
 -- home
 -- config.font_size = 13.6
 -- config.font_size = 13.2
