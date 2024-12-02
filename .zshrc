@@ -108,9 +108,9 @@ source $ZSH/oh-my-zsh.sh
  alias ohmyzsh="mate ~/.oh-my-zsh"
 
 # -------------------------------- #
-# Movement 
+# Movement
 # -------------------------------- #
-alias up='cd ..' 
+alias up='cd ..'
 alias upup='cd ../..'
 
 # -------------------------------- #
@@ -118,8 +118,7 @@ alias upup='cd ../..'
 # -------------------------------- #
 alias gs='git status'
 alias gp='git pull'
-alias gP='git push'
-alias gPF='git push --force'
+alias gP='git push --force-with-lease'
 alias gpl='git pull --rebase'
 alias gcl='git clone'
 alias gst='git stash'
@@ -149,7 +148,7 @@ alias gcam='git commit -am'
 alias gfrb='git fetch origin && git rebase origin/master'
 
 # -------------------------------- #
-# Node package manager 
+# Node package manager
 # -------------------------------- #
 # alias nio="ni --prefer-offline"
 alias s="nr start"
@@ -175,10 +174,8 @@ alias nvimt="NVIM_APPNAME=nvim-test nvim"
 # zsh plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /opt/homebrew/opt/spaceship/spaceship.zsh
 
 # fnm
-eval "$(fnm env --use-on-cd)"
 
 FNM_PATH="/Users/readpato/Library/Application Support/fnm"
 if [ -d "$FNM_PATH" ]; then
@@ -186,7 +183,8 @@ if [ -d "$FNM_PATH" ]; then
   eval "`fnm env`"
 fi
 
-
 . "$HOME/.atuin/bin/env"
 
 eval "$(atuin init zsh)"
+eval "$(starship init zsh)"
+eval "$(fnm env --use-on-cd)"
