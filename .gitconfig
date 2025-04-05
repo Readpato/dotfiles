@@ -1,7 +1,9 @@
 [includeIf "gitdir:~/projects/cubemos/"]
     path = ~/projects/cubemos/.gitconfig
-[includeIf "gitdir:~/projects/oss/"]
-    path = ~/projects/oss/.gitconfig
+[includeIf "gitdir:~/projects/oss"]
+    path = ~/projects/oss/sh/.gitconfig
+[includeIf "gitdir:~/projects/sh/"]
+    path = ~/projects/sh/.gitconfig
 
 [alias]
     lb = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
