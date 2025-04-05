@@ -130,10 +130,11 @@ alias main='git checkout main'
 alias gco='git checkout'
 alias gcob='git checkout -b'
 
-alias gb='git branch'
+alias gb='git br'
+alias gbb="git bb"
 alias gbd='git branch -d'
 
-alias gl='git log'
+alias gl='git lb'
 alias glo='git log --oneline --graph'
 
 alias ga='git add'
@@ -170,6 +171,12 @@ alias nuxi="nlx nuxi"
 
 alias nvim="nvim"
 alias nvimt="NVIM_APPNAME=nvim-test nvim"
+
+# -------------------------------- #
+# Node package manager
+# -------------------------------- #
+alias bwp="browsir personal"
+alias bww="browsir work"
 
 # zsh plugins
 source $(brew --prefix)/share/zsh-autosuggestions/zsh-autosuggestions.zsh
