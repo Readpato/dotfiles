@@ -170,7 +170,7 @@ alias nuxi="nlx nuxi"
 # alias re="nr release"
 
 alias nvim="nvim"
-alias nvimt="NVIM_APPNAME=nvim-test nvim"
+alias nvimsh="NVIM_APPNAME=nvim-sh nvim"
 
 # -------------------------------- #
 # Node package manager
