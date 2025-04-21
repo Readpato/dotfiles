@@ -1,7 +1,7 @@
 [includeIf "gitdir:~/projects/cubemos/"]
     path = ~/projects/cubemos/.gitconfig
 [includeIf "gitdir:~/projects/oss"]
-    path = ~/projects/oss/sh/.gitconfig
+    path = ~/projects/oss/.gitconfig
 [includeIf "gitdir:~/projects/sh/"]
     path = ~/projects/sh/.gitconfig
 
