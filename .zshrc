@@ -171,6 +171,7 @@ alias nuxi="nlx nuxi"
 
 alias nvim="nvim"
 alias nvimsh="NVIM_APPNAME=nvim-sh nvim"
+alias nvimk="NVIM_APPNAME=nvim-kickstart nvim"
 
 # -------------------------------- #
 # Node package manager
